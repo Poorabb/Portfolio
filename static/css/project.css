@@ -1,0 +1,233 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg,#000000,rgb(59, 62, 66),#000000 );
+      background-size: 400% 400%;
+      animation: gradient 60s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+
+  .txtback {
+	background: transparent;
+
+	padding-top: 1em;
+	padding-left: 4.5em;
+	display: flex;
+	justify-content: left;
+}
+
+.typewriter h1 {
+	color: #fff;
+	font-family: 'Courier New', Courier, monospace;
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange;
+	/* The typwriter cursor */
+	white-space: nowrap;
+	/* Keeps the content on a single line */
+	margin: 50 auto;
+	/* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em;
+	/* Adjust as needed */
+	animation:
+		typing 3s steps(30, end),
+		blink-caret .8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+	from,
+	to {
+		border-color: transparent
+	}
+
+	50% {
+		border-color: orange
+	}
+}
+
+.text {
+	background-color: #282828;
+	margin-left:65px;
+	width: 63%;
+	margin-top: 30px;
+	padding: 20px;
+	opacity: 70%;
+	animation: slider 3.5s;
+	color: #ffffff;
+	overflow: hidden;
+	text-wrap: nowrap;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-shadow: #000000;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+@keyframes slider {
+	from {
+		width: 65px
+	}
+
+	to {
+		width: 63%
+	}
+}
+
+.text a {
+	animation: inherit;
+	overflow: hidden;
+
+}
+
+.contact {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	z-index: 3;
+	background-color: transparent;
+}
+
+.contact a {
+
+	color: #fff;
+	text-decoration: none;
+	margin-right: 30px;
+	/* Increase margin to add more space between links */
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: opacity 0.3s ease;
+
+}
+
+.contact a:hover {
+	opacity: 0.3;
+}
+
+.probox1{
+    background-color: #282828;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: -400px;
+    margin-right: 80px;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    opacity: 70%;
+    color:#fff;
+    border: #fff;
+    animation: transform 3s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 3.5s forwards;
+}
+
+.probox1:hover{
+    transform: scale(1.2);
+}
+
+.probox1 img{
+    margin-left: 60px;
+    margin-top: 40px;
+    height:128px;
+    width:128px; 
+    border-radius:10px;
+ 
+}
+
+
+
+
+.probox2{
+    background-color: #282828;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-right: 80px;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    opacity: 70%;
+    color:#fff;
+    border: #fff;
+    animation: transform 3s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 4.5s forwards;
+}
+
+.probox2:hover{
+    transform: scale(1.2);
+}
+
+.probox2 img{
+    margin-left: 60px;
+    margin-top: 40px;
+    height:128px;
+    width:128px; 
+    border-radius:10px;
+ 
+}
+
+
+
+.probox3{
+    background-color: #282828;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-right: 80px;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    opacity: 70%;
+    color:#fff;
+    border: #fff;
+    animation: transform 3s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 7s forwards;
+}
+
+.probox3:hover{
+    transform: scale(1.2);
+}
+
+.probox3 img{
+    margin-left: 60px;
+    margin-top: 40px;
+    height:128px;
+    width:128px; 
+    border-radius:10px;
+ 
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

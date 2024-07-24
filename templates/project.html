@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poorab Gupta • Aspiring CyberSecurity Specialist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+</head>
+
+
+
+<body>
+    <div class="txtback">
+        <div class="typewriter">
+            <h1> My Projects : </h1>
+            <div class="contact">
+                <a href="/">HOME</a>
+                <a href="about">ABOUT</a>
+                <a href="contact">contact</a>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="probox1">
+            <img src="{{ url_for('static', filename='images/password.png') }}"><br><br>
+            <h4>Password strength management</h4>
+            This system ensures the creation and use of strong,
+            secure passwords by enforcing complexity rules.
+            
+        </div>
+        <div class="probox2">
+            <img src="{{ url_for('static', filename='images/lock.png') }}"><br><br>
+            <h4>Secured file system</h4>
+            A secured file system using encryption protects data by converting files 
+            into an unreadable format,accessible only within the app.
+        </div>
+    
+        <div class="probox3">
+            <img src="{{ url_for('static', filename='images/network.png') }}"><br><br>
+            <h4>Packet Patrol</h4>
+            Sniffs network packets, decodes protocols, and alerts you to potential threats lurking in your network traffic.
+        </div>
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
